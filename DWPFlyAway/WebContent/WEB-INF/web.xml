@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>DWPFlyAway</display-name>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+		<!-- <welcome-file>index.htm</welcome-file> -->
+		<!-- <welcome-file>index.jsp</welcome-file> -->
+		<!-- <welcome-file>default.html</welcome-file> -->
+		<!-- <welcome-file>default.htm</welcome-file> -->
+		<!-- <welcome-file>default.jsp</welcome-file> -->
+	</welcome-file-list>
+
+	<!-- Search Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwaySearchServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwaySearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwaySearchServlet</servlet-name>
+		<url-pattern>/flyawaysearchservlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Booking Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayBookingServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayBookingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayBookingServlet</servlet-name>
+		<url-pattern>/flyawaybookingservlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Booking Confirm Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayBookingConfirmServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayBookingConfirmServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayBookingConfirmServlet</servlet-name>
+		<url-pattern>/flyawaybookingconfirmservlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Booking Payment Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayBookingPaymentServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayBookingPaymentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayBookingPaymentServlet</servlet-name>
+		<url-pattern>/flyawaybookingpaymentservlet</url-pattern>
+	</servlet-mapping>	
+
+	<!-- Login Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayLoginServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayLoginServlet</servlet-name>
+		<url-pattern>/flyawayloginservlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Login Admin Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayLoginAdminServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayLoginAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayLoginAdminServlet</servlet-name>
+		<url-pattern>/flyawayloginadminservlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Register Servlet -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayRegisterServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayRegisterServlet</servlet-name>
+		<url-pattern>/flyawayregisterservlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Admin Airlines Servlets -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminAirlinesServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayAdminAirlinesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminAirlinesServlet</servlet-name>
+		<url-pattern>/flyawayadminairlinesservlet</url-pattern>
+	</servlet-mapping>	
+	
+	<!-- Admin Bookings Servlets -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminBookingsServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayAdminBookingsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminBookingsServlet</servlet-name>
+		<url-pattern>/flyawayadminbookingsservlet</url-pattern>
+	</servlet-mapping>	
+
+	<!-- Admin Cities Servlets -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminCitiesServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayAdminCitiesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminCitiesServlet</servlet-name>
+		<url-pattern>/flyawayadmincitiesservlet</url-pattern>
+	</servlet-mapping>	
+
+	<!-- Admin Flights SchedulesServlets -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminFlightsSchedulesServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayAdminFlightsSchedulesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminFlightsSchedulesServlet</servlet-name>
+		<url-pattern>/flyawayadminflightsschedulesservlet</url-pattern>
+	</servlet-mapping>	
+
+	<!-- Admin Transactions Servlets -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminTransactionsServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayAdminTransactionsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminTransactionsServlet</servlet-name>
+		<url-pattern>/flyawayadmintransactionsservlet</url-pattern>
+	</servlet-mapping>	
+
+	<!-- Admin Users Servlets -->
+	<servlet>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminUsersServlet</servlet-name>
+		<servlet-class>com.simplilearn.servlet.FlyAwayAdminUsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>com.simplilearn.servlet.FlyAwayAdminUsersServlet</servlet-name>
+		<url-pattern>/flyawayadminusersservlet</url-pattern>
+	</servlet-mapping>	
+
+
+</web-app>

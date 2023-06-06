@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.simplilearn.models.Airlines" table="Airlines">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="city"></property>
+		<property name="country"></property>
+		<property name="name"></property>
+		<property name="route"></property>
+	</class>
+
+	<class name="com.simplilearn.models.Bookings" table="Bookings">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="flightScheduleId"></property>
+		<property name="flightDate"></property>
+		<property name="passengerCount"></property>
+		<property name="passengerOne"></property>
+		<property name="passengerTwo"></property>
+		<property name="passengerThree"></property>
+		<property name="passengerFour"></property>
+		<property name="transactionId"></property>
+		<property name="userId"></property>
+	</class>	
+
+	<class name="com.simplilearn.models.Cities" table="Cities">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="continent"></property>
+		<property name="country"></property>
+		<property name="name"></property>
+	</class>		
+
+	<class name="com.simplilearn.models.FlightsSchedule" table="FlightsSchedule">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="airline"></property>
+		<property name="date"></property>
+		<property name="destination"></property>
+		<property name="price"></property>
+		<property name="seatsAvailable"></property>
+		<property name="seatsBooked"></property>
+		<property name="seatsTotal"></property>
+		<property name="source"></property>
+	</class>
+	
+	<class name="com.simplilearn.models.Transactions" table="Transactions">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="bookingId"></property>
+		<property name="date"></property>
+		<property name="flightAmount"></property>
+		<property name="passengerCount"></property>
+		<property name="totalDue"></property>
+		<property name="totalPaid"></property>
+	</class>
+	
+	<class name="com.simplilearn.models.Users" table="Users">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="contact"></property>
+		<property name="email"></property>
+		<property name="name"></property>
+		<property name="pass"></property>
+		<property name="type"></property>
+	</class>
+
+
+</hibernate-mapping>

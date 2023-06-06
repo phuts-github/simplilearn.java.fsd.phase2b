@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.simplilearn.models.Product" table="product">
+		<id name="id">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="pName"></property>
+		<property name="pColour"></property>
+		<property name="pDesc"></property>
+		<property name="pQuantity"></property>
+		<property name="pCostPrice"></property>
+		<property name="pSalePrice"></property>
+	</class>
+</hibernate-mapping>
